@@ -3,6 +3,7 @@
 
 html{
   box-sizing: border-box;
+  background-color: #efefef;
 }
 
 
@@ -13,11 +14,18 @@ body{
   line-height: 1.2;
   font-weight: normal;
   margin: 0;
-  background-size: 2000px auto;
+  min-height: 80vh;
+}
+.backgroundImage {
+  width: 100vw;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-position: top center;
   background-repeat: no-repeat;
-
-  min-height: 80vh;
+  background-size: cover;
+  z-index: -1;
 }
 
 h1 {
@@ -64,10 +72,13 @@ h1 {
   opacity: .5;
   transition: .3s ease;
 }
-.header_nav li ul{
-  position: absolute;
-  min-width: 150px;
-  display:none;
+.header_nav {
+  padding-bottom: 20px;
+  li ul{
+    position: absolute;
+    min-width: 150px;
+    display:none;
+  }
 }
 .header_submenu {
   padding: 10px;
@@ -219,6 +230,10 @@ h1 {
       width: 100%;
     }
   }
+}
+
+.pageContent {
+  padding-bottom: 200px;
 }
 
 .gallery {
