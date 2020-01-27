@@ -1,0 +1,233 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap&subset=cyrillic');
+
+html{
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Comfortaa', cursive;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 0;
+  background-size: 2000px auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  min-height: 80vh;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+}
+
+
+
+.wrapper{
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.header{
+
+    text-decoration: none;
+  background-color: rgba(22,34,12,.1);
+}
+.header_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top:56px;
+}
+.header_list{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.header_item{
+  margin-right: 55px;
+}
+.header_item:last-child{
+  margin-right: 0;
+}
+.header_link{
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+}
+.header_link:hover,.header_link:focus, .header_link:active{
+  opacity: .5;
+  transition: .3s ease;
+}
+.header_nav li ul{
+  position: absolute;
+  min-width: 150px;
+  display:none;
+}
+.header_submenu {
+  padding: 10px;
+  text-transform: none;
+  background: dimgrey;
+  opacity: .75;
+  line-height: 1.7;
+}
+.header_submenu a{
+  color:white;
+}
+.header_submenu a:hover{
+  color:#16220C;
+  font-style: normal;
+
+}
+.header_nav li:hover >ul{
+  display:block;
+}
+
+
+//фон картинка
+
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.textBlock {
+  color: #fff;
+  max-width: 40%;
+  padding-left: 80px;
+  padding-top: 113px;
+  padding-bottom: 80px;
+  h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 66px;
+    margin: 0;
+    color: #FFFFFF;
+    padding: 20px 0;
+  }
+  p {
+    max-width:546px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.textBlockFE{
+  color: #fff;
+  max-width: 40%;
+  padding-left: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .FEh1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    margin: 0;
+    color: #FFFFFF;
+    padding: 20px 0;
+  }
+}
+//Главная страница
+
+
+/*intro starts*/
+/*.intro{
+  min-height: 100vh;
+  background: url("../img/intro-bg.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 274px;
+}*/
+
+/*Benefit styles*/
+.benefits_wrap{
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.benefit_galary{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.benefits_title{
+  max-width: 300px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 39px;
+  color: #202F10;
+  background-color: white;
+  padding: 20px 0px;
+  padding-left: 50px;
+
+}
+
+.fareast a {
+
+}
+.fareast a:hover,.fareast:focus, .fareast:active{
+  opacity: 0.7;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.center a{
+
+  max-width: 736px;
+  max-height: 312px;
+
+}
+
+.center a:hover,.center:focus, .center:active{
+  opacity: 0.7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.europ a {
+
+  width: 343.55px;
+  height: 312px;
+}
+.europ a:hover,.europ:focus, .europ:active{
+  opacity: 0.7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.asia a{
+
+  width: 736px;
+  height: 312px;
+}
+.asia a:hover,.asia:focus, .asia:active{
+  opacity: 0.7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*intro end*/
+
+.grid {
+  .grid-item {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.gallery {
+  .gallery-item {
+    width: 33.333%;
+    padding: 10px;
+    box-sizing: border-box;
+    img {      
+      width: 100%;
+    }
+  }
+}
