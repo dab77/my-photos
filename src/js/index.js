@@ -19,7 +19,7 @@ $(document).ready(function () {
       if (response.length > 0) {
         let content = '';
         response.forEach(item => {
-          content = content + `<a href="./img/${item.image}" class="gallery-item" data-caption="${item.title}" data-fancybox="gallery" ><img src="./img/${item.thumb}" /></a>`;
+          content = content + `<a href="./img/${item.image}" class="gallery-item" data-fancybox="gallery" ><img src="./img/${item.thumb}" /></a>`;
         });
         elem.append(content);
         setTimeout(function () {
